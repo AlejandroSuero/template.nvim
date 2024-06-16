@@ -17,18 +17,11 @@ default_target: help
 .PHONY: default_target
 
 test:
-	@$(call style_calls,"Running vusted tests")
-	@vusted ./tests
-	@$(call style_calls,"Done!")
-
-.PHONY: test
-
-test-nvim:
 	@$(call style_calls,"Running tests using nvim")
 	@nvim --headless --noplugin -u ./tests/minimal_init.lua -c "PlenaryBustedDirectory tests/your_plugin { minimal_init = './tests/minimal_init.lua'}"
 	@$(call style_calls,"Done!")
 
-.PHONY: test-nvim
+.PHONY: test
 
 lint: style-lint
 	@$(call style_calls,"Running selene")

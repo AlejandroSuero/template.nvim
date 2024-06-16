@@ -7,7 +7,8 @@ This is a template for Neovim plugins.
 ## What it includes
 
 - [Neovim](https://neovim.io/) plugin boilerplate.
-- [Vusted](https://github.com/notomo/vusted) and [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) for testing.
+- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) for testing.
+  - You can choose to use [vusted](https://github.com/notomo/vusted) or [busted](https://lunarmodules.github.io/busted/) instead or along-side plenary.nvim.
 - [Selene](https://github.com/Kampfkarren/selene.nvim) linter.
 - [StyLua](https://github.com/JohnnyMorganz/StyLua) formatter.
 - [EditorConfig](http://editorconfig.org/) support.
